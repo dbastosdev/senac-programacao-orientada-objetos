@@ -3,15 +3,58 @@ package entidades;
 public class Livro {
 	
 	// Atributos
-	public String nome;
-	public String descricao;
-	public double valor;
-	public String isbn;
-	public Autor autor; // Atributo especial do tipo autor que pertence a uma outra classe - composição.
+	private String nome;
+	private String descricao;
+	private double valor;
+	private String isbn;
+	private Autor autor; // Atributo especial do tipo autor que pertence a uma outra classe - composição.
 	
-	// Construtor -> Possui mesmo nome da classe
+	// Construtores
 	public Livro() {
 		System.out.println("Novo livro criado");
+	}
+	
+	
+	
+	// getters e setters: 
+	public String getNome() {
+		return nome;
+	}
+
+	public Autor getAutor() {
+		return autor;
+	}
+
+	public void setAutor(Autor autor) {
+		this.autor = autor;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public double getValor() {
+		return valor;
+	}
+
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+
+	public String getIsbn() {
+		return isbn;
+	}
+
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
 	}
 	
 	
@@ -28,6 +71,7 @@ public class Livro {
 	
 	}
 	
+
 	// Retorno do método é boolean pois ele atualiza um atributo interno de livro.
 	public boolean aplicaDescontoDe(double porcentagem) {
 		// Um livro pode ter no máximo 30% de desconto
