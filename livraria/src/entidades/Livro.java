@@ -10,8 +10,18 @@ public class Livro {
 	private Autor autor; // Atributo especial do tipo autor que pertence a uma outra classe - composição.
 	
 	// Construtores
+	
+	// Construtor padrão
 	public Livro() {
-		System.out.println("Novo livro criado");
+		// Inicialização do ISBN zerado para não vir com null. Número vem depois do cadastro do livro. 
+		this.isbn = "000-00-00000-00-0";
+	}
+	
+	// Autor é um atributo obrigatório da classe livro. Logo, precisamos dessa atributo para cadastrar um livro.
+	public Livro(Autor autor) {
+		this(); // Encadea chamando o outro construtor com a atribuição do isbn
+		this.autor = autor;
+		
 	}
 	
 	
