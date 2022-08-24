@@ -24,8 +24,10 @@ public class CadastroDeLivros {
 		
 		livro.autor = autor;
 		
-		
-		livro.aplicaDesconto(0.1); // Método para atribuir desconto
+		if(!livro.aplicaDescontoDe(0.4)) { // Caso retorne falso, ou seja, desconto superior a 30% a mensagem é exibida. 
+			System.out.println("Desconto não pode ser maior do que 30%");
+		}
+		 // Método para atribuir desconto
 		livro.mostraDetalhes(); // Uso do método para mostrar detalhes
 		
 

@@ -28,8 +28,15 @@ public class Livro {
 	
 	}
 	
-	public void aplicaDesconto(double porcentagem) {
+	// Retorno do método é boolean pois ele atualiza um atributo interno de livro.
+	public boolean aplicaDescontoDe(double porcentagem) {
+		// Um livro pode ter no máximo 30% de desconto
+		if(porcentagem > 0.3) {
+			return false;
+		} 
 		this.valor -= this.valor * porcentagem;
+		return true;
+		
 	}
 	
 	
