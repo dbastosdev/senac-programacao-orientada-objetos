@@ -5,7 +5,7 @@ public class Livro {
 	// Atributos
 	private String nome;
 	private String descricao;
-	private double valor;
+	protected double valor;
 	private String isbn;
 	private Autor autor; // Atributo especial do tipo autor que pertence a uma outra classe - composição.
 	

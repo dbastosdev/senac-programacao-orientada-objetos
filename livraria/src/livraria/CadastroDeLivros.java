@@ -1,6 +1,7 @@
 package livraria;
 
 import entidades.Autor;
+import entidades.Ebook;
 import entidades.Livro;
 
 public class CadastroDeLivros {
@@ -29,6 +30,11 @@ public class CadastroDeLivros {
 		}
 		 // Método para atribuir desconto
 		livro.mostraDetalhes(); // Uso do método para mostrar detalhes
+		
+		Ebook ebook = new Ebook(autor);
+		ebook.setNome("Java 8");
+		
+		ebook.mostraDetalhes();
 		
 
 	}
