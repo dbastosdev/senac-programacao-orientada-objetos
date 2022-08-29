@@ -1,6 +1,13 @@
 package entidades;
 
-public class Livro {
+/*
+ * Livro deve ser apenas uma abstração das entidades que serão criadas com base em sua definição. 
+ * Dessa forma, essa classe não deve ser instânciada. A melhor forma de fazer isso é transformando-a em uma classe abstrata.
+ * 
+ * Isso causará um erro de compilação ao se tentar instanciar uma classe livro. 
+ */
+
+public abstract class Livro {
 	
 	// Atributos
 	private String nome;
@@ -80,18 +87,30 @@ public class Livro {
 		this.autor.mostraDetalhes();
 	
 	}
+
+	
 	
 
 	// Retorno do método é boolean pois ele atualiza um atributo interno de livro.
-	public boolean aplicaDescontoDe(double porcentagem) {
-		// Um livro pode ter no máximo 30% de desconto
-		if(porcentagem > 0.3) {
-			return false;
-		} 
-		this.valor -= this.valor * porcentagem;
-		return true;
-		
-	}
+//	public boolean aplicaDescontoDe(double porcentagem) {
+//		// Um livro pode ter no máximo 30% de desconto
+////		if(porcentagem > 0.3) {
+////			return false;
+////		} 
+////		this.valor -= this.valor * porcentagem;
+////		return true;
+//		return false;
+//		
+//	}
+	
+	/*
+	 * Melhorando ainda mais o código, basta criarmos um método também abstrado dentro dessa classe para que ele seja
+	 * de implementação obrigatória nas subclasses.
+	 * 
+	 * Apenas classes abstratas podem ter métodos abstratos
+	 */
+	
+	public abstract boolean aplicaDescontoDe(double porcentagem);
 	
 	
 
