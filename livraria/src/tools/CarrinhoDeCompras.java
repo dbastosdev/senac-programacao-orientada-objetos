@@ -1,6 +1,6 @@
 package tools;
 
-import entidades.Livro;
+import Interfaces.Produto;
 
 // Carrinho de compras é uma classe utilizada para adicionar livros, sejam físicos ou ebooks ao carrinho. 
 
@@ -10,10 +10,9 @@ public class CarrinhoDeCompras {
 	
 	
 	// O tipo desse método é livro, porque tanto o LivroFisico quanto Ebook extends de Livro, ou seja, possuem o tipo Livro. 
-	public void adiciona(Livro livro) {
-		System.out.println("Adicionado: " + livro + " - R$ " + livro.getValor());
-		livro.aplicaDescontoDe(0.05); // Aplica 5% de desconto a cada livro adicionado
-		this.total += livro.getValor();
+	public void adiciona(Produto produto) {
+		System.out.println("Adicionado: " + produto + " - R$ " + produto.getValor());
+		this.total += produto.getValor();
 		
 	}
 	

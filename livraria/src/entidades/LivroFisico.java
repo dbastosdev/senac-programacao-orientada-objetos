@@ -1,6 +1,8 @@
 package entidades;
 
-public class LivroFisico extends Livro{
+import Interfaces.Promocional;
+
+public class LivroFisico extends Livro implements Promocional{
 	// atributos são os mesmos de Livro
 	
 	// construtor

@@ -19,7 +19,7 @@ public class CadastroDeLivros {
 				
 		
 		// Instanciando e populando um objeto do tipo livro
-		Livro livro = new LivroFisico(autor); // Aqui está sendo instanciado LivroFisico e não um Livro.
+		LivroFisico livro = new LivroFisico(autor); // Aqui está sendo instanciado LivroFisico e não um Livro.
 		// Refatorado usando métodos para preenchimento dos atributos
 		livro.setNome("Java 8 Prático");
 		livro.setDescricao("Novos recursos da linguagem");
@@ -38,9 +38,8 @@ public class CadastroDeLivros {
 		
 		ebook.mostraDetalhes();
 		
-		Livro miniLivro = new MiniLivro(autor);
+		MiniLivro miniLivro = new MiniLivro(autor);
 		miniLivro.setNome("Java 11");
-		System.out.println(miniLivro.aplicaDescontoDe(0.2));
 		miniLivro.setValor(59.90);
 		miniLivro.mostraDetalhes();
 		

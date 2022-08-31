@@ -1,8 +1,10 @@
 package entidades;
 
+import Interfaces.Promocional;
+
 // Um ebook é um livro. Logo possui todos os atributos e métodos associados a um livro. 
 // Com isso, é possível o reaproveitamento de código. 
-public class Ebook extends Livro{
+public class Ebook extends Livro implements Promocional{
 	
 	// atributos
 	private String waterMark;

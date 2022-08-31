@@ -1,5 +1,7 @@
 package entidades;
 
+import Interfaces.Produto;
+
 /*
  * Livro deve ser apenas uma abstração das entidades que serão criadas com base em sua definição. 
  * Dessa forma, essa classe não deve ser instânciada. A melhor forma de fazer isso é transformando-a em uma classe abstrata.
@@ -7,7 +9,7 @@ package entidades;
  * Isso causará um erro de compilação ao se tentar instanciar uma classe livro. 
  */
 
-public abstract class Livro {
+public abstract class Livro implements Produto {
 	
 	// Atributos
 	private String nome;
@@ -110,7 +112,7 @@ public abstract class Livro {
 	 * Apenas classes abstratas podem ter métodos abstratos
 	 */
 	
-	public abstract boolean aplicaDescontoDe(double porcentagem);
+//	public abstract boolean aplicaDescontoDe(double porcentagem);
 	
 	
 

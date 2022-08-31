@@ -19,9 +19,5 @@ public class MiniLivro extends Livro {
 	// Com a classe livro tendo o padrão de não dar desconto, o comportamento nas subclasses só precisa editiar o método de ofertar
 	// desconto quanto necessário. Por isso, miniLivro não tem desconoto e usa o método de forma herdada.
 	
-	@Override
-	public boolean aplicaDescontoDe(double porcentagem) {
-		return false;
-	}
 }
 	
