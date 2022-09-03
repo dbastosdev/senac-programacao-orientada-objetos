@@ -1,8 +1,8 @@
-package Interfaces;
+package br.com.casadocodigo.livraria.produtos;
 
 /*
  * Nem todas as classes utilizam o método aplica desconto. Logo nem todos os produtos são promocionais.
- * É boa prática utilizar apenas um método para uma interface. Quando uma interface possui apenas um método abstrato.
+ * É boa prática utilizar apenas um método para uma interface. Quando uma interfac possui apenas um método abstrato.
  * ela é chamada de interface funcional e recebe uma anotação especial. Se houver mais um método para de compilar. 
  * Contudo podemos ter quantos default methods desejarmos.
  * */

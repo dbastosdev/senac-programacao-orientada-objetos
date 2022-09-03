@@ -1,6 +1,6 @@
-package tools;
+package br.com.casadocodigo.livraria.helpers;
 
-import Interfaces.Produto;
+import br.com.casadocodigo.livraria.produtos.Produto;
 
 // Carrinho de compras é uma classe utilizada para adicionar livros, sejam físicos ou ebooks ao carrinho. 
 

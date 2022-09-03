@@ -1,6 +1,6 @@
-package entidades;
+package br.com.casadocodigo.livraria.produtos;
 
-import Interfaces.Produto;
+import br.com.casadocodigo.livraria.Autor;
 
 /*
  * Livro deve ser apenas uma abstração das entidades que serão criadas com base em sua definição. 

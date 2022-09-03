@@ -1,6 +1,6 @@
-package entidades;
+package br.com.casadocodigo.livraria.produtos;
 
-import Interfaces.Promocional;
+import br.com.casadocodigo.livraria.Autor;
 
 // Um ebook é um livro. Logo possui todos os atributos e métodos associados a um livro. 
 // Com isso, é possível o reaproveitamento de código. 

@@ -1,10 +1,10 @@
-package livraria;
+package br.com.casadocodigo.livraria.teste;
 
-import entidades.Autor;
-import entidades.Ebook;
-import entidades.Livro;
-import entidades.LivroFisico;
-import entidades.MiniLivro;
+import br.com.casadocodigo.livraria.Autor;
+import br.com.casadocodigo.livraria.produtos.Ebook;
+import br.com.casadocodigo.livraria.produtos.Livro;
+import br.com.casadocodigo.livraria.produtos.LivroFisico;
+import br.com.casadocodigo.livraria.produtos.MiniLivro;
 
 public class CadastroDeLivros {
 

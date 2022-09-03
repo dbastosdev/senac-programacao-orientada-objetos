@@ -1,6 +1,6 @@
-package entidades;
+package br.com.casadocodigo.livraria.produtos;
 
-import Interfaces.Promocional;
+import br.com.casadocodigo.livraria.Autor;
 
 public class LivroFisico extends Livro implements Promocional{
 	// atributos são os mesmos de Livro

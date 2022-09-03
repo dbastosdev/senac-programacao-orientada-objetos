@@ -1,4 +1,4 @@
-package entidades;
+package br.com.casadocodigo.livraria;
 
 public class Autor {
 	// Atributos

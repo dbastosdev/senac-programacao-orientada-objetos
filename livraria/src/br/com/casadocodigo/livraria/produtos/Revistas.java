@@ -1,7 +1,6 @@
-package entidades;
+package br.com.casadocodigo.livraria.produtos;
 
-import Interfaces.Produto;
-import Interfaces.Promocional;
+import br.com.casadocodigo.livraria.Editora;
 
 /*
  * Para pensar. Uma revista não é um livro. Como fica o carrinho de compras? 
