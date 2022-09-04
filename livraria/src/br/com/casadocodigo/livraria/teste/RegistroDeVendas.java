@@ -4,6 +4,7 @@ import br.com.casadocodigo.livraria.Autor;
 import br.com.casadocodigo.livraria.helpers.CarrinhoDeCompras;
 import br.com.casadocodigo.livraria.produtos.Ebook;
 import br.com.casadocodigo.livraria.produtos.LivroFisico;
+import br.com.casadocodigo.livraria.produtos.Produto;
 
 public class RegistroDeVendas {
 
@@ -25,6 +26,18 @@ public class RegistroDeVendas {
 		// Pois foram declarados como Livro na classe de carrinho de compras. 
 	    carrinho.adiciona(fisico);
 	    carrinho.adiciona(ebook);
+	    
+	    // Recuperando a lista de produtos registrados
+	    
+	    // 1- Instancia a classe / lista
+	    Produto[] produtos = carrinho.getProduto();
+	    
+	    // 2- Percorre a lista de produtos - modelo de fazer um foreach no Java a partir do 1.5
+	    for(Produto produto : produtos) {
+	    	if(produto != null) {
+	    		System.out.println(produto.getValor()); // 3- Imprime a lista se essa não for nula
+	    	}
+	    }
 	    
 	    System.out.println(" \nO valor total de livros comprados é: R$ " + carrinho.getTotal());
 	}

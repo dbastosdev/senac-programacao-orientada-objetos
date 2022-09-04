@@ -28,7 +28,15 @@ public abstract class Livro implements Produto {
 	
 	// Autor é um atributo obrigatório da classe livro. Logo, precisamos dessa atributo para cadastrar um livro.
 	public Livro(Autor autor) {
+		
 		this(); // Encadea chamando o outro construtor com a atribuição do isbn
+		
+		// Criando e tratando uma Exception
+		if(autor == null) {
+			throw new RuntimeException("O autor de Livro não pode ser nulo");
+		}
+		
+		
 		this.autor = autor;
 		
 	}
