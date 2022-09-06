@@ -13,7 +13,7 @@ public class CarrinhoDeCompras {
 	
 	// O tipo desse método é livro, porque tanto o LivroFisico quanto Ebook extends de Livro, ou seja, possuem o tipo Livro. 
 	public void adiciona(Produto produto) {
-		System.out.println("Adicionado: " + produto + " - R$ " + produto.getValor());
+//		System.out.println("Adicionado: " + produto + " R$ " + produto.getValor());
 		this.total += produto.getValor();
 		this.produtos[contador] = produto;
 		contador++;

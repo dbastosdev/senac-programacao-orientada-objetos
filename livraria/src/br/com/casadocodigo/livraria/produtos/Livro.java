@@ -98,6 +98,19 @@ public abstract class Livro implements Produto {
 	
 	}
 
+	// Esse override tem a função de ofertar uma saída formatada para quando um objeto é impresso. Por exemplo, na lista de produtos
+	@Override
+	public String toString() {
+		
+		if(this.autor != null) {
+			autor.toString();
+		}
+		
+		return "\n" + "Nome: " + this.nome + "\n" +
+				"Descrição: " + this.descricao + "\n" + 
+				"Valor: R$ " + this.valor + "\n" +
+				"ISBN: " + this.isbn + "\n";
+	}
 	
 	
 

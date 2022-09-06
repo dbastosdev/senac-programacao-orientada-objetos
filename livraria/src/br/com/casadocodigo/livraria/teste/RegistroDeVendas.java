@@ -35,7 +35,8 @@ public class RegistroDeVendas {
 	    // 2- Percorre a lista de produtos - modelo de fazer um foreach no Java a partir do 1.5
 	    for(Produto produto : produtos) {
 	    	if(produto != null) {
-	    		System.out.println(produto.getValor()); // 3- Imprime a lista se essa não for nula
+	    		// 3- Imprime a lista se essa não for nula
+	    		System.out.println(produto); 
 	    	}
 	    }
 	    
