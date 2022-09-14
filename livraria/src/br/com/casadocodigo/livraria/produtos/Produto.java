@@ -1,6 +1,6 @@
 package br.com.casadocodigo.livraria.produtos;
 
-public interface Produto {
+public interface Produto extends Comparable<Produto>{
 	
 	/*
 	 * Interfaces estabelecem um contrato com cláusulas (métodos abstratos) que todas as classes em implementam essa

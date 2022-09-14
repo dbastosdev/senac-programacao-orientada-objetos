@@ -1,5 +1,8 @@
 package br.com.casadocodigo.livraria.teste;
 
+import java.util.Collections;
+import java.util.List;
+
 import br.com.casadocodigo.livraria.Autor;
 import br.com.casadocodigo.livraria.helpers.CarrinhoDeCompras;
 import br.com.casadocodigo.livraria.produtos.Ebook;
@@ -30,7 +33,11 @@ public class RegistroDeVendas {
 	    // Recuperando a lista de produtos registrados
 	    
 	    // 1- Instancia a classe / lista
-	    Produto[] produtos = carrinho.getProduto();
+	    List<Produto> produtos = carrinho.getProduto();
+	    
+	    // Ordenando os resultados por valor
+	    // Ao usar esse código, os produtos são ordenados por valor usando os métodos implementados
+	    Collections.sort(produtos);
 	    
 	    // 2- Percorre a lista de produtos - modelo de fazer um foreach no Java a partir do 1.5
 	    for(Produto produto : produtos) {

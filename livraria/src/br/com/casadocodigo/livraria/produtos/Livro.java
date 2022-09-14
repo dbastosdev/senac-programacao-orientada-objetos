@@ -112,6 +112,20 @@ public abstract class Livro implements Produto {
 				"ISBN: " + this.isbn + "\n";
 	}
 	
+	// Essse método deve ser implementado devido a herança de Livro da interface ComparableTo
+	// A compração realizada é de valor entre os itens. Como são objetos devem ser comparados por um método, que acessa e define os
+	// atributos que devem ser comparados.
+	@Override
+	public int compareTo(Produto outro) {
+		if(this.getValor() < outro.getValor()) {
+			return -1;
+		}
+		if(this.getValor() > outro.getValor()) {
+			return 1;
+		}
+		return 0;
+	}
+	
 	
 
 	// Retorno do método é boolean pois ele atualiza um atributo interno de livro.
