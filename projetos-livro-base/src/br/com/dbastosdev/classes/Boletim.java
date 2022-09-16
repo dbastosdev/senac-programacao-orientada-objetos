@@ -3,31 +3,55 @@ package br.com.dbastosdev.classes;
 public class Boletim {
 	
 	// Atributos
-	public float nota;
-	public int frequencia;
-	public String status;
+	private float nota;
+	private int frequencia;
+	private String status;
 	
-	
-	// Metodos
-	public void inserir_nota() {
-		
+	// Construtor da classe Boletim
+	public Boletim(float n, int f, String st) {
+		setBoletim(n,f,st);
 	}
 	
-	public void excluir_nota() {
-		
+	public Boletim(String st) {
+		setBoletim(0,0,st);
 	}
 	
-	public void alterar_nota() {
-		
+	
+	public Boletim() {
+		this(10, 100, null); // preenche os atributos da classe
 	}
 	
-	public void inserir_frequencia() {
-		
+	public void setBoletim(float n, int f, String st) {
+		setNota(n);
+		setFrequencia(f);
+		setStatus(st);
 	}
 	
-	public void alterar_status() {
-		
+	
+	public float getNota() {
+		return nota;
 	}
+
+	public void setNota(float nota) {
+		this.nota = nota;
+	}
+
+	public int getFrequencia() {
+		return frequencia;
+	}
+
+	public void setFrequencia(int frequencia) {
+		this.frequencia = frequencia;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
 	
 	/*
 	 * Usando polimorfismo estático (sobrecarga) para o cálculo de média
@@ -57,6 +81,10 @@ public class Boletim {
 		return (PM * 0.4) + (AS * 0.6); 
 	}
 
+	// inserir esse método na classe Boletim
+	public void imprimir() {
+			System.out.println(getNota() + "\n" + getFrequencia() + "\n" + getStatus() + "\n");
+	}
 
 
 }

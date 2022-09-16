@@ -1,21 +1,37 @@
 package br.com.dbastosdev.test;
 
+import java.util.Scanner;
+
 import br.com.dbastosdev.classes.Boletim;
 
 public class TesteBoletim {
 
 	public static void main(String[] args) {
 		
-		Boletim b1 = new Boletim();
-		Boletim b2 = new Boletim();
-
-		b1.nota = 10;
-		b1.frequencia = 100;
-		b1.status = "Aprovado";
+		float nota;
+		int frequencia;
+		String status;
 		
-		b2.nota = 9;
-		b2.frequencia = 85;
-		b2.status = "Aprovado";
+		Scanner ler = new Scanner(System.in);
+		
+		
+		System.out.println("Insira a nota de início");
+		nota = ler.nextFloat();
+		System.out.println("Insira a frequência de início");
+		frequencia = ler.nextInt();
+		System.out.println("Insira o status de início");
+		status = ler.next();
+				
+		Boletim B1 = new Boletim(nota,frequencia,status);
+		Boletim B2 = new Boletim();
+		Boletim B3 = new Boletim("APROVADO");
+		
+		System.out.println("Uso do construtor com 3 parâmetros: ");
+		B1.imprimir();
+		System.out.println("Uso do construtor com nenhum parâmetro: ");
+		B2.imprimir();
+		System.out.println("Uso do construtor com 2 parâmetros: ");
+		B3.imprimir();
 		
 		
 	}
